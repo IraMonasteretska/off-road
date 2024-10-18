@@ -1,0 +1,509 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Main</title>
+    <link rel="stylesheet" href="css/lib/bootstrap-grid.min.css">
+    <link rel="stylesheet" href="css/lib/swiper-bundle1.min.css">
+    <link rel="stylesheet" href="css/style.css">
+
+
+
+
+    <style>
+        @keyframes GradientBackground {
+            0% {
+                background-position: 0% 50%;
+            }
+
+            50% {
+                background-position: 100% 50%;
+            }
+
+            100% {
+                background-position: 0% 50%;
+            }
+        }
+
+        .headersection,
+        footer {
+            background: linear-gradient(310deg, #031232, #113A5F, #265D86);
+            background-size: 600% 600%;
+            animation: GradientBackground 8s ease infinite;
+        }
+
+        header.header::after {
+            background: linear-gradient(310deg, #031232, #113A5F, #265D86);
+            background-size: 600% 600%;
+            animation: GradientBackground 8s ease infinite;
+        }
+
+        h1 {
+            font-family: 'chillax';
+            font-weight: 500;
+            font-size: 129px;
+            font-style: normal;
+            /* line-height: 171px; */
+            line-height: 130%;
+            color: #fff;
+            text-align: left;
+        }
+
+        h2 {
+            font-family: 'chillax';
+            font-weight: 500;
+            font-size: 80px;
+            /* line-height: 106px; */
+            line-height: 130%;
+            color: #000;
+            text-align: center;
+        }
+
+        h3 {
+            text-transform: uppercase;
+            font-size: 45px;
+            font-weight: 500;
+            font-family: 'RedHatDisplay';
+            color: #000;
+            text-align: center;
+            line-height: 135%;
+        }
+    </style>
+</head>
+
+<body>
+    <header class="header">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-lg-3">
+                    <a href="#" class="header__logo">
+                        <img src="img/general/logo.svg" alt="Logo">
+                    </a>
+                </div>
+                <div class="col-lg-9 mobmenusect">
+                    <nav>
+                        <ul>
+                            <li><a href="#">Services</a></li>
+                            <li><a href="#">Cases</a></li>
+                            <li><a href="#">Karriere</a></li>
+                            <li><a href="#">Om Os</a></li>
+                            <li><a href="#">Kontact Os</a></li>
+                        </ul>
+                    </nav>
+                </div>
+            </div>
+            <button class="burger"><span></span></button>
+        </div>
+    </header>
+
+    <main class="mian">
+        <section class="headersection">
+            <div class="container-fluid">
+                <div class="headersection__block">
+                    <h1 style="">
+                        Digital strategi<br> og eksekvering
+                    </h1>
+                    <img class="headersection__img" src="img/main/heroimg.svg" alt="hero img">
+                </div>
+            </div>
+        </section>
+
+        <section class="contentsect-1">
+            <div class="container-fluid">
+                <div class="fixwidthcontent">
+                    <h2 class="text-center">
+                        Digital strategi og projektledelse
+                    </h2>
+                    <h3 class="text-center">
+                        Digital strategi og projektledelse er begge afgørende dele af<br> vores marketing ydelser
+                    </h3>
+                    <p class="text-center">
+                        Ur apidunt aut aliquam num iuri nos etur aboreperem dit, isqui to core dit occus nobit eos nobis
+                        essin nosam anis magniti aeperio. Unto dis dolenda vitis endus autatur sit int lam, sent hil
+                        magnis
+                        et odigent quae lat rem a et accustes et lab ilicium dicipie ndignis ipsam con enis mincientur?
+                    </p>
+                    <p class="text-center">
+                        Ucilign issuntorem volenitati quunt, quodia dus de por asperis aut ipsandu citatus et fugia
+                        porrum
+                        hit doloribus, inis ex es reped entiuntur? Qui doluptiuntem quiae nis
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <div class="teamslidersect">
+            <div class="swiper teamslider">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                        <a href="#" class="teamslide">
+                            <img src="img/main/teamslide1.webp" alt="img">
+                            <div class="teamslide__info">
+                                <p class="name">Andrea Jelic</p>
+                                <p class="prof">Digital Designer</p>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="swiper-slide">
+                        <a href="#" class="teamslide">
+                            <video autoplay muted loop>
+                                <source src="video/v1.mp4" type="video/mp4">
+                            </video>
+                            <div class="teamslide__info">
+                                <p class="name">Jesse Showalter</p>
+                                <p class="prof">Design Educator</p>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="swiper-slide">
+                        <a href="#" class="teamslide">
+                            <img src="img/main/teamslide2.webp" alt="img">
+                            <div class="teamslide__info">
+                                <p class="name">Andrea Jelic</p>
+                                <p class="prof">Digital Designer</p>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="swiper-slide">
+                        <a href="#" class="teamslide">
+                            <video autoplay muted loop>
+                                <source src="video/v2.mp4" type="video/mp4">
+                            </video>
+                            <div class="teamslide__info">
+                                <p class="name">Jesse Showalter</p>
+                                <p class="prof">Design Educator</p>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="swiper-slide">
+                        <a href="#" class="teamslide">
+                            <img src="img/main/teamslide1.webp" alt="img">
+                            <div class="teamslide__info">
+                                <p class="name">Andrea Jelic</p>
+                                <p class="prof">Digital Designer</p>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="swiper-slide">
+                        <a href="#" class="teamslide">
+                            <video autoplay muted loop>
+                                <source src="video/v1.mp4" type="video/mp4">
+                            </video>
+                            <div class="teamslide__info">
+                                <p class="name">Jesse Showalter</p>
+                                <p class="prof">Design Educator</p>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <section class="contentsect-2">
+            <div class="container-fluid">
+                <h2>
+                    Hvilke områder kan vi hjælpe på?
+                </h2>
+                <p class="text-center">
+                    Vi hjælper med apidunt aut aliquam num iuri nos etur aboreperem dit,<br>
+                    isqui to core dit occus nobit eos nobis essin
+                </p>
+                <div class="iconsection">
+                    <div class="row">
+                        <div class="col-lg-4 col-md-6">
+                            <div class="iconbox">
+                                <div class="imgwrap">
+                                    <img src="img/main/loc-icon.svg" alt="img">
+                                </div>
+                                <p>
+                                    DIGITAL
+                                    FORRETNINGSSTRATEGI
+                                </p>
+                            </div>
+                        </div>
+                        <div class="col-lg-4 col-md-6">
+                            <div class="iconbox">
+                                <div class="imgwrap">
+                                    <img src="img/main/loc-icon.svg" alt="img">
+                                </div>
+                                <p>
+                                    ledelse af digital omstilling
+                                </p>
+                            </div>
+                        </div>
+                        <div class="col-lg-4 col-md-6">
+                            <div class="iconbox">
+                                <div class="imgwrap">
+                                    <img src="img/main/loc-icon.svg" alt="img">
+                                </div>
+                                <p>
+                                    Valg af<br>
+                                    digitale platforme
+                                </p>
+                            </div>
+                        </div>
+                        <div class="col-lg-4 col-md-6">
+                            <div class="iconbox">
+                                <div class="imgwrap">
+                                    <img src="img/main/loc-icon.svg" alt="img">
+                                </div>
+                                <p>
+                                    DASHBOARDS, RAPPORTER
+                                    OG VIDEN
+                                </p>
+                            </div>
+                        </div>
+                        <div class="col-lg-4 col-md-6">
+                            <div class="iconbox">
+                                <div class="imgwrap">
+                                    <img src="img/main/loc-icon.svg" alt="img">
+                                </div>
+                                <p>
+                                    VISUEL<br>
+                                    KOMMUNIKATION
+                                </p>
+                            </div>
+                        </div>
+                        <div class="col-lg-4 col-md-6">
+                            <div class="iconbox">
+                                <div class="imgwrap">
+                                    <img src="img/main/loc-icon.svg" alt="img">
+                                </div>
+                                <p>
+                                    WEB <br>
+                                    PROJEKTLEDELSE
+                                </p>
+                            </div>
+                        </div>
+                        <div class="col-lg-4 col-md-6">
+                            <div class="iconbox">
+                                <div class="imgwrap">
+                                    <img src="img/main/loc-icon.svg" alt="img">
+                                </div>
+                                <p>
+                                    PLANLÆGNING AF DIGITAL MARKETING
+                                </p>
+                            </div>
+                        </div>
+                        <div class="col-lg-4 col-md-6">
+                            <div class="iconbox">
+                                <div class="imgwrap">
+                                    <img src="img/main/loc-icon.svg" alt="img">
+                                </div>
+                                <p>
+                                    KOMMUNIKATION OG INDHOLDSPRODUKTION
+                                </p>
+                            </div>
+                        </div>
+                        <div class="col-lg-4 col-md-6">
+                            <div class="iconbox">
+                                <div class="imgwrap">
+                                    <img src="img/main/loc-icon.svg" alt="img">
+                                </div>
+                                <p>
+                                    DIGITAL MEDIE-PLANLÆGNING OG INDKØB
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="btnbox text-center">
+                        <a href="#" class="btnlink" style="background: #0F375B;">
+                            SERVICEUDELSE
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="contentsect-3">
+            <div class="topbd-element" style="background: rgba(162, 214, 238, 0.26);"></div>
+            <div class="container-fluid">
+                <h2 class="text-center" style="">
+                    Vores arbejde
+                </h2>
+                <div class="media-items">
+                    <div class="row justify-content-center">
+                        <div class="col-lg-4 col-md-4">
+                            <a href="#" class="media-item">
+                                <div class="imgwrap">
+                                    <img src="img/main/media-item1.svg" alt="img">
+                                </div>
+                                <div class="decsr text-center">
+                                    <h4 class="title">ALD CARMARKET</h4>
+                                    <p>
+                                        DIGITAL
+                                        FORRETNINGSSTEATEGI
+                                    </p>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="col-lg-4 col-md-4">
+                            <a href="#" class="media-item">
+                                <div class="imgwrap">
+                                    <video autoplay muted loop>
+                                        <source src="video/v1.mp4" type="video/mp4">
+                                    </video>
+                                </div>
+                                <div class="decsr text-center">
+                                    <h4 class="title">
+                                        LIBERAL ALLIANCE
+                                    </h4>
+                                    <p>
+                                        DIGITALE MEDIER OG MARKETING
+                                    </p>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="col-lg-4 col-md-4">
+                            <a href="#" class="media-item">
+                                <div class="imgwrap">
+                                    <img src="img/main/media-item1.svg" alt="img">
+                                </div>
+                                <div class="decsr text-center">
+                                    <h4 class="title">VILD NORDISK NATUR</h4>
+                                    <p>
+                                        PROJEKTLEDELSE AF NYT WEBSITE
+                                    </p>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="btnbox text-center">
+                        <a href="#" class="btnlink" style="background: #0F375B;">
+                            ALLE CASES
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+        </section>
+
+        <section class="arbejde-med" style="background: rgba(162, 214, 238, 0.26);">
+            <div class="container-fluid">
+                <h2>
+                    Vi er stolte af at arbejde med
+                </h2>
+                <p>
+                    Vi hjælper med apidunt aut aliquam num iuri nos etur aboreperem dit, <br>
+                    isqui to core dit occus nobit eos nobis essin
+                </p>
+            </div>
+            <div class="swiper arbejdeslider">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                        <a href="#" class="arbejdeslide">
+                            <img src="img/main/arbejdemed1.svg" alt="img">
+                        </a>
+                    </div>
+                    <div class="swiper-slide">
+                        <a href="#" class="arbejdeslide">
+                            <img src="img/main/arbejdemed2.svg" alt="img">
+                        </a>
+                    </div>
+                    <div class="swiper-slide">
+                        <a href="#" class="arbejdeslide">
+                            <img src="img/main/arbejdemed3.svg" alt="img">
+                        </a>
+                    </div>
+                    <div class="swiper-slide">
+                        <a href="#" class="arbejdeslide">
+                            <img src="img/main/arbejdemed4.svg" alt="img">
+                        </a>
+                    </div>
+                    <div class="swiper-slide">
+                        <a href="#" class="arbejdeslide">
+                            <img src="img/main/arbejdemed5.svg" alt="img">
+                        </a>
+                    </div>
+                    <div class="swiper-slide">
+                        <a href="#" class="arbejdeslide">
+                            <img src="img/main/arbejdemed6.svg" alt="img">
+                        </a>
+                    </div>
+                    <div class="swiper-slide">
+                        <a href="#" class="arbejdeslide">
+                            <img src="img/main/arbejdemed3.svg" alt="img">
+                        </a>
+                    </div>
+                    <div class="swiper-slide">
+                        <a href="#" class="arbejdeslide">
+                            <img src="img/main/arbejdemed4.svg" alt="img">
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="contentsect-2">
+            <div class="container-fluid">
+                <h2 class="mb20">
+                    Har du en idé? Fortæl os om den!
+                </h2>
+                <p class="text-center">
+                    Vi hjælper med apidunt aut aliquam num iuri nos etur aboreperem dit,<br>
+                    isqui to core dit occus nobit eos nobis essin
+                </p>
+                <div class="btnbox text-center">
+                    <a href="#" class="btnlink" style="background: #0F375B;">
+                        KONTAKT OS
+                    </a>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="container-fluid">
+            <div class="footer__container">
+                <div class="row">
+                    <div class="col-lg-4 col-md-4">
+                        <div class="footer__box">
+                            <a href="#" class="footer__logo">
+                                <img src="img/general/logo.svg" alt="logo">
+                            </a>
+                            <p class="followus">
+                                Følg os på <a href="#" target="_blank">LinkedIn</a>
+                            </p>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-4">
+                        <div class="footer__box">
+                            <p class="title">KONTAKT OS</p>
+                            <p>
+                                Orient Plads 1, 1. tv<br>
+                                2150 Nordhavn, Danmark
+                            </p>
+                            <ul>
+                                <li><a href="tel:+4536981860">Telefon: + 45 36 98 18 60</a></li>
+                                <li><a href="#">VAT: 34474311</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-4">
+                        <div class="footer__box">
+                            <p class="title">SERVICYDELSER</p>
+                            <ul>
+                                <li><a href="#">Projektledelse</a></li>
+                                <li><a href="#">Visuel kommunikation</a></li>
+                                <li><a href="#">Web udvikling</a></li>
+                                <li><a href="#">Medie og SoMe</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="footer__rightstext">
+                    <p>© 2024 OFF ROAD ApS. All rights reserved | Privatlivspolitik </p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+
+    <script src="js/lib/jquery.js"></script>
+    <script src="js/lib/swiper-bundle1.min.js"></script>
+    <script src="js/main.js"></script>
+</body>
+
+</html>

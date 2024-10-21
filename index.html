@@ -7,6 +7,7 @@
     <title>Main</title>
     <link rel="stylesheet" href="css/lib/bootstrap-grid.min.css">
     <link rel="stylesheet" href="css/lib/swiper-bundle1.min.css">
+    <link rel="stylesheet" href="css/lib/aos.css">
     <link rel="stylesheet" href="css/style.css">
 
 
@@ -28,7 +29,9 @@
         }
 
         .headersection,
-        footer {
+        footer,
+        .submenu>ul,
+        .submenu>ul ul {
             background: linear-gradient(310deg, #031232, #113A5F, #265D86);
             background-size: 600% 600%;
             animation: GradientBackground 8s ease infinite;
@@ -85,7 +88,42 @@
                 <div class="col-lg-9 mobmenusect">
                     <nav>
                         <ul>
-                            <li><a href="#">Services</a></li>
+                            <li class="sublink">
+                                <button class="menuarrow">
+                                    <img src="img/general/menu-arrow.svg" alt="">
+                                </button>
+                                <a href="#">Services</a>
+                                <div class="submenu">
+                                    <ul>
+                                        <li class="sublink">
+                                            <button class="menuarrow">
+                                                <img src="img/general/menu-arrow.svg" alt="">
+                                            </button>
+                                            <a href="#">Subpage 1</a>
+                                            <ul>
+                                                <li>
+                                                    <a href="#">Subpage 1.1</a>
+                                                </li>
+                                                
+                                            </ul>
+                                        </li>
+                                        <li class="sublink">
+                                            <button class="menuarrow">
+                                                <img src="img/general/menu-arrow.svg" alt="">
+                                            </button>
+                                            <a href="#">Subpage 2</a>
+                                            <ul>
+                                                <li>
+                                                    <a href="#">Subpage 2.1</a>
+                                                </li>
+                                                <li>
+                                                    <a href="#">Subpage 2.2</a>
+                                                </li>
+                                            </ul>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </li>
                             <li><a href="#">Cases</a></li>
                             <li><a href="#">Karriere</a></li>
                             <li><a href="#">Om Os</a></li>
@@ -102,7 +140,7 @@
         <section class="headersection">
             <div class="container-fluid">
                 <div class="headersection__block">
-                    <h1 style="">
+                    <h1 data-aos="zoom-out-up">
                         Digital strategi<br> og eksekvering
                     </h1>
                     <img class="headersection__img" src="img/main/heroimg.svg" alt="hero img">
@@ -113,19 +151,19 @@
         <section class="contentsect-1">
             <div class="container-fluid">
                 <div class="fixwidthcontent">
-                    <h2 class="text-center">
+                    <h2 class="text-center " data-aos="zoom-out-up">
                         Digital strategi og projektledelse
                     </h2>
-                    <h3 class="text-center">
-                        Digital strategi og projektledelse er begge afgørende dele af<br> vores marketing ydelser
+                    <h3 class="text-center " data-aos="zoom-out-up">
+                        Digital strategi og projektledelse er begge afgørende dele af vores marketing ydelser
                     </h3>
-                    <p class="text-center">
+                    <p class="text-center " data-aos="zoom-out-up">
                         Ur apidunt aut aliquam num iuri nos etur aboreperem dit, isqui to core dit occus nobit eos nobis
                         essin nosam anis magniti aeperio. Unto dis dolenda vitis endus autatur sit int lam, sent hil
                         magnis
                         et odigent quae lat rem a et accustes et lab ilicium dicipie ndignis ipsam con enis mincientur?
                     </p>
-                    <p class="text-center">
+                    <p class="text-center " data-aos="zoom-out-up">
                         Ucilign issuntorem volenitati quunt, quodia dus de por asperis aut ipsandu citatus et fugia
                         porrum
                         hit doloribus, inis ex es reped entiuntur? Qui doluptiuntem quiae nis
@@ -134,7 +172,7 @@
             </div>
         </section>
 
-        <div class="teamslidersect">
+        <div class="teamslidersect " data-aos="zoom-out-up">
             <div class="swiper teamslider">
                 <div class="swiper-wrapper">
                     <div class="swiper-slide">
@@ -203,16 +241,16 @@
 
         <section class="contentsect-2">
             <div class="container-fluid">
-                <h2>
+                <h2  data-aos="zoom-out-up">
                     Hvilke områder kan vi hjælpe på?
                 </h2>
-                <p class="text-center">
+                <p class="text-center " data-aos="zoom-out-up">
                     Vi hjælper med apidunt aut aliquam num iuri nos etur aboreperem dit,<br>
                     isqui to core dit occus nobit eos nobis essin
                 </p>
                 <div class="iconsection">
                     <div class="row">
-                        <div class="col-lg-4 col-md-6">
+                        <div class="col-lg-4 col-md-6 " data-aos="zoom-out-up">
                             <div class="iconbox">
                                 <div class="imgwrap">
                                     <img src="img/main/loc-icon.svg" alt="img">
@@ -223,7 +261,7 @@
                                 </p>
                             </div>
                         </div>
-                        <div class="col-lg-4 col-md-6">
+                        <div class="col-lg-4 col-md-6 " data-aos="zoom-out-up">
                             <div class="iconbox">
                                 <div class="imgwrap">
                                     <img src="img/main/loc-icon.svg" alt="img">
@@ -233,7 +271,7 @@
                                 </p>
                             </div>
                         </div>
-                        <div class="col-lg-4 col-md-6">
+                        <div class="col-lg-4 col-md-6 " data-aos="zoom-out-up">
                             <div class="iconbox">
                                 <div class="imgwrap">
                                     <img src="img/main/loc-icon.svg" alt="img">
@@ -244,7 +282,7 @@
                                 </p>
                             </div>
                         </div>
-                        <div class="col-lg-4 col-md-6">
+                        <div class="col-lg-4 col-md-6 " data-aos="zoom-out-up">
                             <div class="iconbox">
                                 <div class="imgwrap">
                                     <img src="img/main/loc-icon.svg" alt="img">
@@ -255,7 +293,7 @@
                                 </p>
                             </div>
                         </div>
-                        <div class="col-lg-4 col-md-6">
+                        <div class="col-lg-4 col-md-6 " data-aos="zoom-out-up">
                             <div class="iconbox">
                                 <div class="imgwrap">
                                     <img src="img/main/loc-icon.svg" alt="img">
@@ -266,7 +304,7 @@
                                 </p>
                             </div>
                         </div>
-                        <div class="col-lg-4 col-md-6">
+                        <div class="col-lg-4 col-md-6 " data-aos="zoom-out-up">
                             <div class="iconbox">
                                 <div class="imgwrap">
                                     <img src="img/main/loc-icon.svg" alt="img">
@@ -277,7 +315,7 @@
                                 </p>
                             </div>
                         </div>
-                        <div class="col-lg-4 col-md-6">
+                        <div class="col-lg-4 col-md-6 " data-aos="zoom-out-up">
                             <div class="iconbox">
                                 <div class="imgwrap">
                                     <img src="img/main/loc-icon.svg" alt="img">
@@ -287,7 +325,7 @@
                                 </p>
                             </div>
                         </div>
-                        <div class="col-lg-4 col-md-6">
+                        <div class="col-lg-4 col-md-6 " data-aos="zoom-out-up">
                             <div class="iconbox">
                                 <div class="imgwrap">
                                     <img src="img/main/loc-icon.svg" alt="img">
@@ -297,7 +335,7 @@
                                 </p>
                             </div>
                         </div>
-                        <div class="col-lg-4 col-md-6">
+                        <div class="col-lg-4 col-md-6 " data-aos="zoom-out-up">
                             <div class="iconbox">
                                 <div class="imgwrap">
                                     <img src="img/main/loc-icon.svg" alt="img">
@@ -320,12 +358,12 @@
         <section class="contentsect-3">
             <div class="topbd-element" style="background: rgba(162, 214, 238, 0.26);"></div>
             <div class="container-fluid">
-                <h2 class="text-center" style="">
+                <h2 class="text-center " data-aos="zoom-out-up">
                     Vores arbejde
                 </h2>
                 <div class="media-items">
                     <div class="row justify-content-center">
-                        <div class="col-lg-4 col-md-4">
+                        <div class="col-lg-4 col-md-4 " data-aos="zoom-out-up">
                             <a href="#" class="media-item">
                                 <div class="imgwrap">
                                     <img src="img/main/media-item1.svg" alt="img">
@@ -339,7 +377,7 @@
                                 </div>
                             </a>
                         </div>
-                        <div class="col-lg-4 col-md-4">
+                        <div class="col-lg-4 col-md-4 " data-aos="zoom-out-up">
                             <a href="#" class="media-item">
                                 <div class="imgwrap">
                                     <video autoplay muted loop>
@@ -356,7 +394,7 @@
                                 </div>
                             </a>
                         </div>
-                        <div class="col-lg-4 col-md-4">
+                        <div class="col-lg-4 col-md-4 " data-aos="zoom-out-up">
                             <a href="#" class="media-item">
                                 <div class="imgwrap">
                                     <img src="img/main/media-item1.svg" alt="img">
@@ -382,15 +420,15 @@
 
         <section class="arbejde-med" style="background: rgba(162, 214, 238, 0.26);">
             <div class="container-fluid">
-                <h2>
+                <h2 data-aos="zoom-out-up">
                     Vi er stolte af at arbejde med
                 </h2>
-                <p>
+                <p data-aos="zoom-out-up">
                     Vi hjælper med apidunt aut aliquam num iuri nos etur aboreperem dit, <br>
                     isqui to core dit occus nobit eos nobis essin
                 </p>
             </div>
-            <div class="swiper arbejdeslider">
+            <div class="swiper arbejdeslider " data-aos="zoom-out-up">
                 <div class="swiper-wrapper">
                     <div class="swiper-slide">
                         <a href="#" class="arbejdeslide">
@@ -438,14 +476,14 @@
 
         <section class="contentsect-2">
             <div class="container-fluid">
-                <h2 class="mb20">
+                <h2 class="mb20 " data-aos="zoom-out-up">
                     Har du en idé? Fortæl os om den!
                 </h2>
-                <p class="text-center">
+                <p class="text-center " data-aos="zoom-out-up">
                     Vi hjælper med apidunt aut aliquam num iuri nos etur aboreperem dit,<br>
                     isqui to core dit occus nobit eos nobis essin
                 </p>
-                <div class="btnbox text-center">
+                <div class="btnbox text-center " data-aos="zoom-out-up">
                     <a href="#" class="btnlink" style="background: #0F375B;">
                         KONTAKT OS
                     </a>
@@ -503,6 +541,7 @@
 
     <script src="js/lib/jquery.js"></script>
     <script src="js/lib/swiper-bundle1.min.js"></script>
+    <script src="js/lib/aos.js"></script>
     <script src="js/main.js"></script>
 </body>
 

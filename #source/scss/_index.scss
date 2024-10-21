@@ -226,7 +226,7 @@
         }
 
         p {
-            font-family: 'RedHatDisplay';
+            font-family: 'chillax';
             font-size: 34px;
             line-height: 150%;
             text-transform: uppercase;
@@ -289,6 +289,10 @@
 .fixwidthcontent {
     max-width: 1600px;
     margin: 0 auto;
+}
+
+section, main {
+    overflow: hidden;
 }
 
 @media(min-width:1600px) and (max-height:700px) {
@@ -513,7 +517,7 @@
             font-size: 60px;
         }
 
-        
+
     }
 
     .headersection__img {
@@ -541,3 +545,178 @@
 
 }
 
+@media(max-width:767.8px) {
+    body {
+        h1 {
+            font-size: 45px;
+        }
+
+
+        h2 {
+            font-size: 40px;
+        }
+
+        h3 {
+            font-size: 22px;
+        }
+
+    }
+
+    .headersection {
+        height: 400px;
+    }
+
+    .headersection__img {
+        max-width: 320px;
+    }
+
+    p br {
+        display: none;
+    }
+
+    .media-items {
+        max-width: 400px;
+    }
+
+
+
+
+    .contentsect-2 h2 {
+        margin-bottom: 30px;
+    }
+
+}
+
+@media(max-width:575.8px) {
+    body {
+        h1 {
+            font-size: 35px;
+        }
+
+        h2 {
+            font-size: 30px;
+        }
+    }
+
+    .headersection {
+        min-height: initial;
+        height: 240px;
+    }
+
+    .headersection__img {
+        bottom: 20px;
+        max-width: 240px;
+        right: -40px;
+    }
+
+    .contentsect-1 {
+        padding: 45px 0;
+    }
+
+    .teamslider .swiper-slide {
+        width: 260px;
+        height: 260px;
+    }
+
+    .teamslider .teamslide {
+        box-shadow: 15px 15px 0 -6px #DEDFE4;
+    }
+
+    .contentsect-2 {
+        padding: 45px 0;
+    }
+
+    .contentsect-2 h2 {
+        margin-bottom: 18px;
+    }
+
+    .iconsection .iconbox .imgwrap {
+        height: 130px;
+        margin-bottom: 40px;
+    }
+
+    .iconsection .iconbox {
+        margin-bottom: 50px;
+    }
+
+    .iconsection .iconbox p {
+        max-width: 260px;
+        margin: 0 auto;
+    }
+
+    .iconsection {
+        .col-md-6 {
+            display: none;
+
+            &:nth-child(-n+3) {
+                display: block;
+            }
+        }
+    }
+
+    .contentsect-3 .topbd-element {
+        height: 206px;
+    }
+
+    .media-items {
+        max-width: 270px;
+    }
+
+    .media-items .media-item .imgwrap {
+        box-shadow: 15px 15px 0 -6px #DEDFE4;
+        margin-bottom: 25px;
+    }
+
+    .media-items .media-item p {
+        font-family: 'chillax';
+        font-size: 20px;
+    }
+
+    .media-items .media-item {
+        margin-bottom: 40px;
+    }
+
+    .arbejde-med {
+        padding: 30px 0 20px;
+    }
+
+    .arbejde-med .arbejdeslide {
+        height: 74px;
+    }
+
+    .iconsection .iconbox {
+        margin-bottom: 0;
+        margin-top: 50px;
+    }
+
+    .iconsection .row .col-lg-4:nth-child(1) {
+        .iconbox {
+            margin-top: 0;
+        }
+    }
+
+
+
+    .contentsect-3 h2,
+    .arbejde-med h2,
+    .contentsect-2 h2 {
+        margin-bottom: 30px;
+    }
+
+    .contentsect-3 {
+        padding: 30px 0 50px;
+    }
+
+    .contentsect-1 h2 {
+        font-size: 30px;
+    }
+
+    .contentsect-1 h3 {
+        font-size: 20px;
+    }
+
+    .contentsect-1 p,
+    .contentsect-2 p {
+        font-size: 15px;
+    }
+}

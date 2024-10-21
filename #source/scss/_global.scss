@@ -50,7 +50,7 @@ button {
     display: inline-flex;
     align-items: center;
     justify-content: center;
-    padding: 10px 57px;
+    padding: 6px 57px;
     color: #fff;
     text-decoration: none;
     border-radius: 48px;
@@ -65,6 +65,7 @@ button {
     margin-bottom: 20px;
 }
 
+
 @media(max-width:1600.8px) {
     .btnlink {
         font-size: 24px;
@@ -72,4 +73,32 @@ button {
     }
 
 
+}
+
+@media(min-width:767.8px) {
+    [data-aos] {
+        pointer-events: auto !important;
+      }
+    
+      html:not(.no-js) [data-aos^=fade][data-aos^=fade] {
+        opacity: 1 !important;
+      }
+    
+      html:not(.no-js) [data-aos=zoom-out-up] {
+        transform: none !important;
+        opacity: 1 !important;
+      }
+}
+
+@media(max-width:575.8px) {
+    .container-fluid {
+        padding-left: 25px;
+        padding-right: 25px;
+    }
+
+    .btnlink {
+        padding: 5px 25px;
+        max-width: 276px;
+        width: 100%;
+    }
 }

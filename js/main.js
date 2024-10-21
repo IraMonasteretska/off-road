@@ -1,4 +1,12 @@
 $(document).ready(function () {
+    // animation
+    AOS.init({
+        duration: 900,
+        easing: 'ease-in-out',
+        // once: false,
+        anchorPlacement: 'top-bottom',
+    });
+
 
     // header scroll 
 
@@ -30,20 +38,28 @@ $(document).ready(function () {
     // team slider
     var swiper = new Swiper(".teamslider", {
         slidesPerView: "auto",
-        spaceBetween: 50,
+        spaceBetween: 30,
         loop: true,
         speed: 6000,
-        
+
         autoplay: {
             disableOnInteraction: false,
             delay: 1,
         },
+
+        breakpoints: {
+
+            576: {
+                spaceBetween: 50,
+            },
+
+        },
     });
-    
+
     // arbejde med slider
     var swiper1 = new Swiper(".arbejdeslider", {
         slidesPerView: "auto",
-        spaceBetween: 50,
+        spaceBetween: 30,
         loop: true,
         speed: 6000,
 
@@ -51,16 +67,36 @@ $(document).ready(function () {
             delay: 1,
             disableOnInteraction: false,
         },
-    });
-    
 
-      // burger menu
-      $('.burger').on('click', function () {
+        breakpoints: {
+
+            576: {
+                spaceBetween: 50,
+            },
+
+        },
+    });
+
+
+    // burger menu
+    $('.burger').on('click', function () {
         $('.header__mobile-menu').toggleClass('active');
         $('body').toggleClass('mob-menu');
         $(this).toggleClass('on');
 
         $('header.header').toggleClass('active')
+    });
+
+
+    $('nav > ul > .sublink > .menuarrow').click(function(){
+        $(this).siblings('.submenu').toggleClass('show');
+        $(this).parent('li').toggleClass('active');
+        $(this).toggleClass('rotate');
+    });
+    $('.submenu .sublink .menuarrow').click(function(){
+        $(this).siblings('ul').toggleClass('show');
+        $(this).parent('li').toggleClass('active');
+        $(this).toggleClass('rotate');
     });
 
 })
